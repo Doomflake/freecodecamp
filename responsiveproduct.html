@@ -1,37 +1,80 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<div class="wrapper">
-  <div class="header">
+
+  <header id="header">
+    <nav class="header" id="nav-bar">
     <div class="box logoimg">
-      <img src="http://wausauequipment.com/assets/images/splash-high-performance3.jpg"></div>
+        <img id="header-img" src="http://wausauequipment.com/assets/images/splash-high-performance3.jpg"></div>
     <div class="box logo">Snow Equipment R Us</div>
 
     <div class="box home">
-      <a href="#">Home</a>
+        <a class="nav-link" href="#header">Home</a>
     </div>
     <div class="box products">
-      <a href="#">Products</a>
+        <a class="nav-link" href="#Demo">Product Demo</a>
     </div>
     <div class="box about">
-      <a href="#">About Us</a>
+        <a class="nav-link" href="#plans">Plans</a>
 
     </div>
     <div class="box contact">
-      <a href="#">Contact Us</a>
+        <a class="nav-link" href="#contact">Contact Us</a>
     </div>
-  </div>
-
+    </nav>
+  </header>
+<div class="wrapper">
   <div id="footer"></div>
+
   <div id="marginL"></div>
   <div id="marginR"></div>
   <div class="content">
-    <div class="null">null</div>
-    <div class="video-grid">
+    <div id="contact">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" onsubmit="return validateForm()" method="post">
+        <div id="backing">
+          <p id="description">Please submit your email address to have our representatives contact you about the best plan for you
+          </p><br>
+        </div>
+        
+        <div class="email-label">
+          <label id="email-label">
+          Email address: </label>
+          <input type="email" label="Email" placeholder="example@example.com" id="email" required></div>
+        <div class="number-label"></div><br>
+        <input type="submit" id="submit"> 
+        
+      </input>
+
+      </form>
+    </div>
+    <div class="video-grid" id="Demo">
       <div class="video-item">
-        <div class="video-wrap">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/dvGRQByK9VE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-wrap" >
+          <iframe id="video" src="https://www.youtube.com/embed/dvGRQByK9VE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
+        </div>
+    <div class="lower boxes">
+      <h3>Lower</h3>
+      <ul>Bag of salt</ul>
+      <li>One bag</li>
+      <li>Base line shovel</li>
+      </div>
+    <div class="mid boxes">
+      <h3>Middle</h3>
+      <ul>Parking Lot Clearing</ul>
+      <li>Truckload of Salt</li>
+      <li>F-150 with Plow</li>
+      <li>Top line shovel <br>for sidewalks</li>
+    </div>
+    <div class="top boxes" id="plans">
+      <h3>Top</h3>
+      <ul>Road/Runway Clearing</ul>
+      <li>Clearing of all <br>roads or runways</li>
+      <li>Dumptruck load of salt</li>
+      <li>Industrial sized snowplow</li>
+      <li>Sidewalk ice melting system <br>installed and tested</li>
+      <li>Priority Service</li>
+
     </div>
   </div>
 </div>
