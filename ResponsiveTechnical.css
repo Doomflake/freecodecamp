@@ -58,40 +58,17 @@
     font-weight: bold;
     text-align: center;
   }
-  .logoimg {
-    display: grid;
-    grid-area: logoimg;
-  }
-  .logo {
-    display: grid;
-    grid-area: logo;
-  }
-  .home {
-    display: grid;
-    grid-area: home;
-  }
-  .products {
-    display: grid;
-    grid-area: products;
-    
-  }
+  ul li {
+    display: block;
+    width: 20em;
+  } 
   button {
     background: var(--backgroundimg)
-  }
-  .about {
-    display: grid;
-    grid-area: about;
-  }
-  .contact {
-    display: grid;
-    grid-area: contact;
   }
   img {
     width: 40%;
     margin: auto;
   }
-  
-
   #contact {
     display: grid;
     grid-area: 3/2;
