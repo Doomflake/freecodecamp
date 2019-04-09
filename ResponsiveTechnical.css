@@ -36,19 +36,18 @@
     font-family: "Josefin Sans", sans-serif;
   }
   
-  .wrapper {
+  .page {
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: auto 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: var(--back2color);
     color: var(--text);
     grid-template-areas:
-      "header  header header"
-      "marginL content  marginR"
-      "foot foot foot";
+      "header main main"
+      "header main  main"
+      "header foot foot";
   }
-  
   .box {
     background-image: var(--backgroundimg);
     color: var(--background);
@@ -58,13 +57,10 @@
     font-weight: bold;
     text-align: center;
   }
-  ul li {
-    display: block;
-    width: 20em;
-  } 
   button {
     background: var(--backgroundimg)
   }
+  
   img {
     width: 40%;
     margin: auto;
@@ -77,13 +73,17 @@
     margin-top: 3em;
     text-align: center;
   }
-  .content {
+  #main-doc {
     display: grid;
-    grid-gap: 1em;
-    grid-area: content;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 3fr 1fr;
-    }
+    grid-area: main;
+    background-color: red;
+    border: 2px solid black;
+  }
+  #header {
+    display: grid;
+    grid-area: header;
+    background-color: green;
+  }
   .boxes {
     border: 1px solid black;
     text-align: center;
