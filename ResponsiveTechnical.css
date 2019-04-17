@@ -39,7 +39,7 @@ body {
 .page {
   display: grid;
   grid-gap: 1px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: .5fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background-color: var(--back2color);
   color: var(--text);
@@ -84,6 +84,9 @@ img {
   grid-area: header;
   background-color: green;
 }
+#header li {
+  margin: 0em;
+}
 .boxes {
   border: 1px solid black;
   text-align: center;
@@ -91,11 +94,18 @@ img {
   font-weight: bold;
   border-radius: 5px;
 }
-pre code {
-  background-color: #999;
+code xmp{
+  background-color: #444;
   border: 1px solid #000;
   display: block;
-  padding: 2em;
+  padding: 2em; 
+  margin: 3em 3em 3em 6em;
+  text-shadow: 1px 1px #000; 
+  color: #fff;
+  width: 80%;
+}
+li {
+  margin: 1em 1em 1em 3em;
 }
 @media screen 
   and (device-width: 360px) 
