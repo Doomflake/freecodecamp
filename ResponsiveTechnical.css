@@ -27,7 +27,7 @@ textarea {
   padding: 0;
   margin: 0;
 }
-a {
+nav a {
   text-decoration: none;
   color: var(--text);
 }
@@ -39,7 +39,7 @@ body {
 .page {
   display: grid;
   grid-gap: 1px;
-  grid-template-columns: .5fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background-color: var(--back2color);
   color: var(--text);
@@ -58,7 +58,7 @@ body {
   text-align: center;
 }
 button {
-  background: var(--backgroundimg)
+  background: var(--backgroundimg);
 }
 
 img {
@@ -76,13 +76,16 @@ img {
 #main-doc {
   display: grid;
   grid-area: main;
-  background-color: red;
+  background-color: re;
   border: 2px solid black;
 }
 #header {
   display: grid;
   grid-area: header;
-  background-color: green;
+  }
+#navbar {
+  position: fixed;
+  width: 20%;
 }
 #header li {
   margin: 0em;
@@ -94,24 +97,48 @@ img {
   font-weight: bold;
   border-radius: 5px;
 }
-code xmp{
+code xmp {
   background-color: #444;
   border: 1px solid #000;
   display: block;
-  padding: 2em; 
+  padding: 2em;
   margin: 3em 3em 3em 6em;
-  text-shadow: 1px 1px #000; 
+  text-shadow: 1px 1px #000;
   color: #fff;
   width: 80%;
 }
 li {
   margin: 1em 1em 1em 3em;
 }
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) {
-    .footer {
-      color: black;
+#results {
+  padding-left: 3em;
+  background-color: white;
+  border: 1px solid black;
+}
+#frame {
+  width: 50%;
+  padding-left: 3em;
+}
+@media 
+  (max-device-width: 800px) 
+  and (orientation: portrait) { 
+    :root {
+      --background: #f0b7a1;
+  --backgroundimg: radial-gradient(
+    ellipse,
+    #f0b7a1 0%,
+    #8c3310 2%,
+    #8c3310 56%,
+    #bf6e4e 100%
+  );
+  --backimg: radial-gradient(
+    ellipse,
+    rgba(53, 106, 160, 1) 0%,
+    rgba(53, 106, 160, 0.46) 100%
+  );
+  --primary: var(--background);
+  --text: #fff;
+  --text2: #000;
+  --back2color: var(--primary);
     }
-} 
+}

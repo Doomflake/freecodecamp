@@ -1,12 +1,13 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <div class="page">
   <header id="header">
-    <nav class="header" id="nav-bar">
+    <nav class="header" id="navbar">
       <ul class="nav">
-        <li class="box CSS_Documentation"><a class="nav-link" href="#CSS_Documentation">CSS Documentation</a>          
+        <li class="box CSS_Documentation">
+          <header><a class="nav-link" href="#CSS_Documentation">CSS Documentation</a></header>
         </li>
-        <li class="box Introduction_to_CSS">
-          <a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a>
+        <li class="box Introduction_To_CSS">
+          <a class="nav-link" href="#Introduction_To_CSS">Introduction to CSS</a>
         </li>
         <li class="box CSS_Syntax">
           <a class="nav-link" href="#CSS_Syntax">CSS Syntax</a>
@@ -14,27 +15,33 @@
         <li class="box First_Made">
           <a class="nav-link" href="#First_Made">First Made</a>
         </li>
-        <li class="box CSS_Syntax">
+        <li class="box Lorem_Ipsum">
           <a class="nav-link" href="#Lorem_Ipsum">Lorem Ipsum</a>
         </li>
-        <li class="box CSS_Syntax">
+        <li class="box Sed_Ut">
           <a class="nav-link" href="#Sed_Ut">Sed Ut</a>
         </li>
-        <li class="box CSS_Syntax">
+        <li class="box Far_Far">
           <a class="nav-link" href="#Far_Far">Far Far</a>
         </li>
       </ul>
     </nav>
   </header>
   <main id="main-doc">
-    <section class="main-section" id="Introduction_To_Css">
+    <section class="main-section" id="CSS_Documentation">
+      <header>Css Documentation</header>
+      <br>
+      <p>For more information, including the following code example, you can find more information at the developers section at <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS" target="_blank">Mozilla.org</a></p>
+    </section>
+    <section class="main-section" id="Introduction_To_CSS">
       <header>
         Introduction to Css
       </header>
       <br>
-      <p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, colour, size and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module gets you started on the path to CSS mastery with the basics of how it works, including selectors and properties, writing CSS rules, applying CSS to HTML, how to specify length, colour, and other units in CSS, cascade and inheritance, and debugging CSS.</p>
+      <p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, colour, size and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module gets you
+        started on the path to CSS mastery with the basics of how it works, including selectors and properties, writing CSS rules, applying CSS to HTML, how to specify length, colour, and other units in CSS, cascade and inheritance, and debugging CSS.</p>
       <br>
-      
+
       <li>Colors</li>
       <li>Backgrounds</li>
       <li>Basic animations</li>
@@ -45,7 +52,8 @@
         CSS Syntax
       </header>
       <br>
-      <p>Next up, we dive into CSS syntax in a lot more detail, looking at how properties and their values form into declarations, multiple declarations form into declaration blocks, and declaration blocks and selectors form into complete CSS rules. We round off the article by looking at other CSS syntax features such as comments and whitespace.</p>
+      <p>Next up, we dive into CSS syntax in a lot more detail, looking at how properties and their values form into declarations, multiple declarations form into declaration blocks, and declaration blocks and selectors form into complete CSS rules. We round
+        off the article by looking at other CSS syntax features such as comments and whitespace.</p>
       <code><xmp>
 <!DOCTYPE html>
 <html>
@@ -64,9 +72,27 @@
       <li>a list</li>
     </ul>
   </body>
-</html></xmp></code>
+</html>
+        </xmp>
+           </code>
       <li>With this CSS</li>
-      <code><xmp></xmp></code>
+      <code><xmp>h1 {
+  colour: blue;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+p {
+  color: red;
+}
+
+p, li {
+  text-decoration: underline;
+}</xmp></code>
+      <li>Creates the following result</li>
+      <div id="frame">
+      <p id="results"><iframe class="live-sample-frame sample-code-frame" frameborder="0" height="250px" id="frame_A_touch_of_vocabulary" src="https://mdn.mozillademos.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Syntax$samples/A_touch_of_vocabulary?revision=1530890" width="90%"></iframe></p>
+      </div>
     </section>
     <section class="main-section" id="First_Made">
       <header>
@@ -74,15 +100,14 @@
       </header>
       <br>
       <br>
-      
+
       <p>First made under lesser life give cattle, fruitful heaven. Creeping fill air unto beast forth that bearing they're his can't heaven our him moving us lights fifth whales years one fish blessed doesn't, fourth, fifth air firmament void fly. A.</p>
-<p>
-  <br>
-Creepeth of Seed seasons second form place divide male two life in day male all. Heaven all lesser life they're darkness i without Stars tree you void moved make divide.</p>
-<br>
-<p>
-Subdue you'll fruitful whales face so. His also void moveth lesser. Thing, cattle image created his divided earth, deep abundantly, saying rule also their you. Shall creepeth cattle i the.</p>
-      <code><xmp>code</xmp></code>
+      <p>
+        <br> Creepeth of Seed seasons second form place divide male two life in day male all. Heaven all lesser life they're darkness i without Stars tree you void moved make divide.</p>
+      <br>
+      <p>
+        Subdue you'll fruitful whales face so. His also void moveth lesser. Thing, cattle image created his divided earth, deep abundantly, saying rule also their you. Shall creepeth cattle i the.</p>
+      <code><xmp><h2>H2 heading</h2></xmp></code>
       <li>Subdued</li>
     </section>
     <section class="main-section" id="Lorem_Ipsum">
@@ -91,26 +116,37 @@ Subdue you'll fruitful whales face so. His also void moveth lesser. Thing, cattl
       </header>
       <br>
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate </p>
-      <code><xmp>code</xmp></code>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+        quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate </p>
+      <code><xmp><h3>This is an h3 heading</h3></xmp></code>
       <li>dolor</li>
-      <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p>
+      <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+        vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p>
     </section>
     <section class="main-section" id="Sed_Ut">
       <header>
         Sed Ut
       </header>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui </p>
-      <code><xmp>code</xmp></code>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui </p>
+      <code><xmp><h4>This is an h4 headline</h4></xmp></code>
       <li>perspiciatis</li>
+      <p>Dui lectus morbi volutpat. Suscipit, montes dictum fames fermentum. Aenean porttitor condimentum torquent velit. Cubilia enim feugiat ridiculus dui, metus montes ridiculus urna quisque orci nibh fringilla rutrum duis etiam Sapien scelerisque habitant
+        proin.</p>
+      <p>
+        Conubia litora dolor mauris vel velit vel nibh odio per imperdiet duis suscipit. Blandit class magnis ante facilisis molestie, lorem et. Sociis dui consectetuer, dapibus laoreet quis consectetuer per pede suspendisse. Litora praesent morbi, dui integer.
+        Pellentesque semper. Dignissim dictum.</p>
+      <p>
+        Neque sem mattis donec orci augue eleifend leo hendrerit pretium condimentum mauris integer volutpat. Porttitor platea iaculis vivamus. Orci, pharetra fringilla eu velit. Ad quam augue.</p>
     </section>
     <section class="main-section" id="Far_Far">
       <header>
         Far Far
       </header>
       <br>
-      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary </p>
-      <code><xmp>code</xmp></code>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows
+        by their place and supplies it with the necessary </p>
+      <code><xmp><h5>This is an h5 heading</h5></xmp></code>
       <li>perspiciatis</li>
     </section>
   </main>
